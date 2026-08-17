@@ -21,23 +21,28 @@
 				<img src="registration-form-8.jpg" alt="">
 			</div>
 			<div class="form-inner">
-				<form action="">
+			"<form action="https://formspree.io/f/xeajlrlv" method="POST">
+
 					<div class="form-header">
 						<h3>Sign up</h3>
 						<img src="sign-up.png" alt="" class="sign-up-icon">
 					</div>
 					<div class="form-group">
 						<label for="">Username:</label>
-						<input type="text" class="form-control" data-validation="length alphanumeric" data-validation-length="3-12">
+						<input type="text" name="username" class="form-control" data-validation="length alphanumeric" data-validation-length="min4-max12">
+
 					</div>
+				<div class="form-group">
+    <label for="">E-mail:</label>
+    <input type="text" name="email" class="form-control" data-validation="email">
+</div>
+	
+					
 					<div class="form-group">
-						<label for="">E-mail:</label>
-						<input type="text" class="form-control" data-validation="email">
-					</div>
-					<div class="form-group" >
-						<label for="">Password:</label>
-						<input type="password" class="form-control" data-validation="length" data-validation-length="min8">
-					</div>
+    <label for="">Password:</label>
+    <input type="password" name="password" class="form-control" data-validation="length" data-validation-length="min8">
+</div>
+
 					<button>create my account</button>
 					<div class="socials">
 						<p>Sign up with social platforms</p>
